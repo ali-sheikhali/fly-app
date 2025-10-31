@@ -16,7 +16,7 @@ export default function HeroHeader() {
       {/* overlay */}
       <div className="absolute inset-0 bg-linear-to-b from-[#051235D9]/85 to-[#020A21]" />
       {/* content */}
-      <div className="absolute w-10/12 md:w-8/12 left-1/2 -translate-x-1/2 top-9">
+      <div className="absolute w-10/12 md:w-9/12 left-1/2 -translate-x-1/2 top-9">
         <NavBar />
         <ChoiceFlightsHotels />
       </div>

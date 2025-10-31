@@ -73,7 +73,7 @@ export default function HeroHeaderAbout() {
       </svg>
 
       {/* لایه 5: محتوا (روی همه) */}
-      <div className="absolute w-10/12 md:w-8/12 left-1/2 -translate-x-1/2 top-9 z-20">
+      <div className="absolute w-10/12 md:w-9/12 left-1/2 -translate-x-1/2 top-9 z-20">
         <NavBar />
         <LoacationAbout />
       </div>
