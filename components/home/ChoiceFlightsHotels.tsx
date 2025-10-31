@@ -22,14 +22,14 @@ export default function ChoiceFlightsHotels() {
   ] as const;
 
   return (
-    <div className="flex flex-col gap-6 mt-20">
+    <div className="flex flex-col justify-center gap-6 mt-20 w-full md:w-6/12 mx-auto text-center">
  
-      <div className="flex justify-between">
+      <div className="flex justify-between items-center">
         {options.map((opt) => (
           <label
             key={opt.key}
             className={clsx(
-              "cursor-pointer select-none rounded-[50px] px-4 py-2 transition-colors",
+              "cursor-pointer flex justify-center items-center select-none rounded-[50px] px-4 py-2 transition-colors",
               choice === opt.key
                 ? "bg-primary-500 text-white"
                 : "border border-primary-50 text-primary-50 hover:bg-primary-100/10"
@@ -50,12 +50,12 @@ export default function ChoiceFlightsHotels() {
 
     
       {(choice === "flight" || choice === "combo") && (
-        <div className="flex justify-between">
+        <div className="flex justify-between items-center">
           {flightOptions.map((opt) => (
             <label
               key={opt.key}
               className={clsx(
-                "cursor-pointer flex items-center gap-4 text-xs text-backgrand-1 select-none rounded-[50px] transition-colors"
+                "cursor-pointer text-center flex items-center gap-4 text-xs text-backgrand-1 select-none rounded-[50px] transition-colors"
               )}
             >
               <input

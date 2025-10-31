@@ -189,7 +189,7 @@ export default function NavBar() {
             href="/about"
             className="text-primary-100 border border-primary-500 p-3 rounded-xl"
           >
-            ارتباط با ما
+            درباره ما
           </Link>
         </div>
         <div className="flex items-center gap-2" >
