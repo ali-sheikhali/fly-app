@@ -5,10 +5,19 @@ import journeyIcon from "public/about/Journey.svg";
 import Image from "next/image";
 import logoColor from "public/logoWithColor.png";
 import reload from "public/about/reload-circle.png";
+import telegram from "public/footer/Telegram.png";
+import instagram from "public/footer/Instagram.png";
+import twitter from "public/footer/Twitter.png";
+import whatsapp from "public/footer/Whatsapp.png";
+import passengers from "public/footer/passenger.png";
+import airlines from "public/footer/airlines.jpg";
+import iata from "public/footer/iata.jpg";
+import winter from "public/footer/winter.png";
+import enamd from "public/footer/enamd.jpg";
 export default function Footer() {
   return (
-    <div className="w-full bg-zinc-100">
-      <div className="w-11/12 mx-auto flex flex-col gap-5 md:w-8/12 mt-10  py-20">
+    <div className="w-full bg-zinc-100 md:bg-[#EFF3FB]">
+      <div className="w-11/12 mx-auto flex flex-col gap-5 md:w-8/12 py-20">
         <div className="flex flex-col lg:flex-row md:justify-between gap-2.5 py-2 px-3 bg-primary-50 rounded-2xl">
           <AboutWrapper
             icon={journeyIcon}
@@ -71,13 +80,38 @@ export default function Footer() {
                   <Image src={reload} width={24} height={24} alt="reload" />
                 </div>
               </div>
-              <button type="submit" className="w-full h-14 text-center bg-secondary-1-700 text-backgrand-1 rounded-lg">
+              <button
+                type="submit"
+                className="w-full h-14 text-center bg-secondary-1-700 text-backgrand-1 rounded-lg"
+              >
                 ارسال
               </button>
             </form>
           </div>
         </div>
-        
+        <div className="flex flex-col gap-6 lg:flex-row lg:justify-between">
+          <div className="flex justify-between items-center lg:gap-3">
+            <div className="w-12 h-12 bg-primary-500 rounded-full flex justify-center items-center">
+              <Image src={telegram} width={24} height={24} alt="telegram" />
+            </div>
+            <div className="w-12 h-12 bg-primary-500 rounded-full flex justify-center items-center">
+              <Image src={twitter} width={24} height={24} alt="twitter" />
+            </div>
+            <div className="w-12 h-12 bg-primary-500 rounded-full flex justify-center items-center">
+              <Image src={instagram} width={24} height={24} alt="instagram" />
+            </div>
+            <div className="w-12 h-12 bg-primary-500 rounded-full flex justify-center items-center">
+              <Image src={whatsapp} width={24} height={24} alt="whatsapp" />
+            </div>
+          </div>
+          <div className="grid grid-cols-5 lg:gap-3">
+            <Image src={airlines} width={54} height={54} alt="airlines" className="border border-Zinc-500 p-1 h-[90%] rounded-md" />
+            <Image src={passengers} width={54} height={54} alt="passengers" className="border border-Zinc-500 p-1 rounded-md" />
+            <Image src={iata} width={54} height={54} alt="iata" className="border border-Zinc-500 p-1 rounded-md" />
+            <Image src={winter} width={54} height={54} alt="winter" className="border border-Zinc-500 p-1 rounded-md" />
+            <Image src={enamd} width={54} height={54} alt="enamd" className="border border-Zinc-500 p-1 rounded-md" />
+          </div>
+        </div>
       </div>
     </div>
   );
