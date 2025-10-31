@@ -3,15 +3,9 @@ import locImage from "public/about/locationImage.png";
 import phoneIcon from "public/about/Phone Call Ringing.svg";
 import emailIcon from "public/about/email.svg";
 import journeyIcon from "public/about/Journey.svg";
+import AboutWrapper from "./AboutWrapper";
 
-function AboutWrapper({ icon, title }: { icon: string; title: string }) {
-  return (
-    <div className="flex items-center gap-2">
-      <Image src={icon} width={30} height={30} alt="icon" />
-      <p className="text-xs">{title}</p>
-    </div>
-  );
-}
+
 
 export default function LoacationAbout() {
   return (
