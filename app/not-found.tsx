@@ -20,8 +20,8 @@ export default function notFound() {
         />
         <div className="w-10/12 mx-auto flex flex-col gap-6">
           <p className="text-xs text-center text-zinc-900">
-            متأسفیم! صفحه‌ای که به دنبال آن هستید پیدا نشد.{" "}
-          </p>
+              خطای داخلی سرور
+            </p>
           <Link
             className=""
             href="/"
